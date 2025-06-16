@@ -12,7 +12,7 @@ public class customerentityexcuetor {
 		ct1.setName("sam");
 		ct1.setCity("madurai");
 		System.out.println(ct1);
-		
+	
 	}
 
 }
