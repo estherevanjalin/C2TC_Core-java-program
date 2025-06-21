@@ -3,16 +3,15 @@ package day3;
 public class customerentityexcuetor {
 	public static void main(String args[]) {
 		customerentity ct = new customerentity();
-		ct.setId(101);
-		ct.setName("esther");
-		ct.setCity("chennai");
+		
 		System.out.println(ct);
-		customerentity ct1 =new customerentity();
-		ct1.setId(201);
-		ct1.setName("sam");
-		ct1.setCity("madurai");
+		customerentity ct1 = new customerentity(202,"abinaya");
 		System.out.println(ct1);
-	
+		customerentity ct2 = new customerentity(201,"sam","coimbade");
+		System.out.println(ct2);
+		
+		
+		
 	}
 
 }

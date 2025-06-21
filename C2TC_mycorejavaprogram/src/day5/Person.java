@@ -1,28 +1,19 @@
-package day3;
-
-public class customerentity {
+package day5;
+//this program demonsrate person base class
+public class Person {
 	private int id;
 	private String name;
 	private String city;
-	public  customerentity(){
+	public Person() {   //default constructor
 		this.id=101;
 		this.name="esther";
 		this.city="chennai";
-		
 	}
-public customerentity(int id,String name) {
-	this.id=id;
-	this.name=name;
-	
-	
-}
-public customerentity(int id,String name,String city) {
-	this.id=id;
-	this.name=name;
-	this.city=city;
-	
-}
-	
+	public Person (int id,String name,String city) {
+		this.id=id;
+		this.name=name;
+		this.city=city;
+	}
 	public int getId() {
 		return id;
 	}
@@ -33,6 +24,7 @@ public customerentity(int id,String name,String city) {
 		return name;
 	}
 	public void setName(String name) {
+		
 		this.name = name;
 	}
 	public String getCity() {
@@ -43,7 +35,8 @@ public customerentity(int id,String name,String city) {
 	}
 	@Override
 	public String toString() {
-		return "customerentity [id=" + id + ", name=" + name + ", city=" + city + "]";
+		return "Person [id=" + id + ", name=" + name + ", city=" + city + "]";
 	}
+	
 
 }
